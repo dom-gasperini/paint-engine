@@ -18,11 +18,11 @@ BEGIN
     BEGIN
         BLOCK "040904B0"
         BEGIN
-            VALUE "FileDescription",  "Paint Matcher"
+            VALUE "FileDescription",  "Paint Engine"
             VALUE "FileVersion",      "@PROJECT_VERSION@"
-            VALUE "InternalName",     "PaintMatcher"
-            VALUE "OriginalFilename", "PaintMatcher.exe"
-            VALUE "ProductName",      "Paint Matcher"
+            VALUE "InternalName",     "PaintEngine"
+            VALUE "OriginalFilename", "PaintEngine.exe"
+            VALUE "ProductName",      "Paint Engine"
             VALUE "ProductVersion",   "@PROJECT_VERSION@"
         END
     END

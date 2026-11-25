@@ -1,4 +1,4 @@
-// Qt Installer Framework component script for Paint Matcher.
+// Qt Installer Framework component script for Paint Engine.
 
 function Component()
 {
@@ -16,24 +16,24 @@ Component.prototype.createOperations = function()
     var nativeTarget = targetDir.replace(/\//g, "\\");
 
     component.addOperation("CreateShortcut",
-                           "@TargetDir@/PaintMatcher.exe",
-                           "@StartMenuDir@/Paint Matcher.lnk",
+                           "@TargetDir@/PaintEngine.exe",
+                           "@StartMenuDir@/Paint Engine.lnk",
                            "workingDirectory=@TargetDir@",
-                           "iconPath=@TargetDir@/PaintMatcher.exe",
+                           "iconPath=@TargetDir@/PaintEngine.exe",
                            "iconId=0",
                            "description=Find the closest matching paint products");
 
     component.addOperation("CreateShortcut",
-                           "@TargetDir@/PaintMatcherMaintenanceTool.exe",
-                           "@StartMenuDir@/Uninstall Paint Matcher.lnk",
+                           "@TargetDir@/PaintEngineMaintenanceTool.exe",
+                           "@StartMenuDir@/Uninstall Paint Engine.lnk",
                            "workingDirectory=@TargetDir@",
-                           "description=Update or remove Paint Matcher");
+                           "description=Update or remove Paint Engine");
 
     component.addOperation("CreateShortcut",
-                           "@TargetDir@/PaintMatcher.exe",
-                           "@DesktopDir@/Paint Matcher.lnk",
+                           "@TargetDir@/PaintEngine.exe",
+                           "@DesktopDir@/Paint Engine.lnk",
                            "workingDirectory=@TargetDir@",
-                           "iconPath=@TargetDir@/PaintMatcher.exe",
+                           "iconPath=@TargetDir@/PaintEngine.exe",
                            "iconId=0",
                            "description=Find the closest matching paint products");
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package>
-    <DisplayName>Paint Matcher</DisplayName>
-    <Description>Paint Matcher application with the sample paint database.</Description>
+    <DisplayName>Paint Engine</DisplayName>
+    <Description>Paint Engine application with the sample paint database.</Description>
     <Version>1.0.1</Version>
     <ReleaseDate>2026-11-24</ReleaseDate>
     <Default>true</Default>

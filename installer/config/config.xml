@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Installer>
-    <Name>Paint Matcher</Name>
+    <Name>Paint Engine</Name>
     <Version>1.0.1</Version>
-    <Title>Paint Matcher 1.0.1 Setup</Title>
-    <Publisher>Paint Matcher</Publisher>
+    <Title>Paint Engine 1.0.1 Setup</Title>
+    <Publisher>Paint Engine</Publisher>
     <ProductUrl></ProductUrl>
 
     <!--
-      Per-user install (%LOCALAPPDATA%\Programs\PaintMatcher). The application writes
-      settings.ini next to PaintMatcher.exe, which is not allowed under Program Files
+      Per-user install (%LOCALAPPDATA%\Programs\PaintEngine). The application writes
+      settings.ini next to PaintEngine.exe, which is not allowed under Program Files
       without administrator rights, so a per-user folder is the default.
     -->
-    <TargetDir>@HomeDir@/AppData/Local/Programs/PaintMatcher</TargetDir>
-    <StartMenuDir>Paint Matcher</StartMenuDir>
+    <TargetDir>@HomeDir@/AppData/Local/Programs/PaintEngine</TargetDir>
+    <StartMenuDir>Paint Engine</StartMenuDir>
     <AllowSpaceInPath>true</AllowSpaceInPath>
     <AllowNonAsciiCharacters>true</AllowNonAsciiCharacters>
 
@@ -21,11 +21,11 @@
     <InstallerApplicationIcon>pwp_logo</InstallerApplicationIcon>
     <InstallerWindowIcon>pwp_logo.png</InstallerWindowIcon>
 
-    <MaintenanceToolName>PaintMatcherMaintenanceTool</MaintenanceToolName>
+    <MaintenanceToolName>PaintEngineMaintenanceTool</MaintenanceToolName>
     <WizardStyle>Modern</WizardStyle>
     <WizardDefaultWidth>640</WizardDefaultWidth>
     <WizardDefaultHeight>480</WizardDefaultHeight>
 
-    <RunProgram>@TargetDir@/PaintMatcher.exe</RunProgram>
-    <RunProgramDescription>Launch Paint Matcher</RunProgramDescription>
+    <RunProgram>@TargetDir@/PaintEngine.exe</RunProgram>
+    <RunProgramDescription>Launch Paint Engine</RunProgramDescription>
 </Installer>

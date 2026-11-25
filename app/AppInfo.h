@@ -9,8 +9,8 @@
 #define APP_VERSION "1.0.1"
 #endif
 
-#define APP_NAME "Paint Matcher"
-#define APP_ORGANIZATION "PaintMatcher"
+#define APP_NAME "Paint Engine"
+#define APP_ORGANIZATION "PaintEngine"
 
 // The core library uses UTF-8 std::string; Qt 6 converts std::string as UTF-8.
 inline QString toQ(const std::string& s) { return QString::fromStdString(s); }
