@@ -27,24 +27,7 @@ PaintEngine/
   installer/            Qt Installer Framework config, package and build script
 ```
 
-## Building
-
-Requirements: CMake 3.21+, Qt 6.2+ (Widgets), a C++17 compiler (MSVC 2019 16.8+ or MinGW GCC 11+).
-
-```
-cmake -S . -B build -DCMAKE_PREFIX_PATH=C:/Qt/6.x.x/msvc2022_64
-cmake --build build --config Release
-ctest --test-dir build -C Release      # core tests
-```
-
-The build copies `data/paints.csv` next to the executable, so it runs straight from the build folder.
-
-## The database CSV
-
-Save the workbook's *Picker* sheet as **CSV UTF-8** (or plain CSV). The first row must be
-the header. Columns are matched by name (case, spaces and punctuation are ignored), so their
-order does not matter and extra columns are ignored. Rows with no Brand, Line, Coating Type
-or Advertised Purpose (the workbook's empty template rows) are skipped.
+## The database
 
 Value formats understood:
 
@@ -88,18 +71,3 @@ exe folder when the file is inside it), the default weights, the default result 
 window layout. Missing keys are written with defaults on start-up. If the folder is not
 writable the application says so; the installer therefore installs per user to
 `%LOCALAPPDATA%\Programs\PaintEngine` rather than Program Files.
-
-## Installer (Qt Installer Framework)
-
-```
-installer\build_installer.bat stage build\Release\PaintEngine.exe
-windeployqt --release --no-translations installer\packages\com.paintengine.app\data\PaintEngine.exe
-installer\build_installer.bat build C:\Qt\Tools\QtInstallerFramework\4.x\bin
-```
-
-This produces `installer\PaintEngineSetup-1.0.1.exe`, which installs the application,
-the sample database in `data\`, Start-menu and desktop shortcuts, and a maintenance tool.
-On uninstall, `settings.ini` is removed as well.
-
-Keep your full database outside the install folder (and point Options at it): the uninstaller
-and a reinstall replace `data\paints.csv`.
