@@ -1,7 +1,7 @@
 # Paint Engine v1.0.1
 
-## Installer
-[Download Installer]({{ site.baseurl }}{% installer/PwpPaintEngine_Installer.exe %})   
+## Download
+[Download Paint Engine 1.0.1 for Windows](https://github.com/dom-gasperini/paint-engine/raw/main/installer/PwpPaintEngine_Installer.exe)
 
 A Qt application that finds the paint products in a CSV database that best match
 a set of attribute criteria, ranked by a weighted similarity score.
