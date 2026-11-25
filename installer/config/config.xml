@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>Paint Matcher</Name>
+    <Version>1.0.1</Version>
+    <Title>Paint Matcher 1.0.1 Setup</Title>
+    <Publisher>Paint Matcher</Publisher>
+    <ProductUrl></ProductUrl>
+
+    <!--
+      Per-user install (%LOCALAPPDATA%\Programs\PaintMatcher). The application writes
+      settings.ini next to PaintMatcher.exe, which is not allowed under Program Files
+      without administrator rights, so a per-user folder is the default.
+    -->
+    <TargetDir>@HomeDir@/AppData/Local/Programs/PaintMatcher</TargetDir>
+    <StartMenuDir>Paint Matcher</StartMenuDir>
+    <AllowSpaceInPath>true</AllowSpaceInPath>
+    <AllowNonAsciiCharacters>true</AllowNonAsciiCharacters>
+
+    <!-- Icons, relative to this file. InstallerApplicationIcon is given without
+         extension: binarycreator appends .ico on Windows. -->
+    <InstallerApplicationIcon>pwp_logo</InstallerApplicationIcon>
+    <InstallerWindowIcon>pwp_logo.png</InstallerWindowIcon>
+
+    <MaintenanceToolName>PaintMatcherMaintenanceTool</MaintenanceToolName>
+    <WizardStyle>Modern</WizardStyle>
+    <WizardDefaultWidth>640</WizardDefaultWidth>
+    <WizardDefaultHeight>480</WizardDefaultHeight>
+
+    <RunProgram>@TargetDir@/PaintMatcher.exe</RunProgram>
+    <RunProgramDescription>Launch Paint Matcher</RunProgramDescription>
+</Installer>
