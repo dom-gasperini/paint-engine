@@ -6,30 +6,6 @@
 A Qt application that finds the paint products in a CSV database that best match
 a set of attribute criteria, ranked by a weighted similarity score.
 
-## Layout
-
-```
-PaintEngine/
-  CMakeLists.txt
-  core/                 Qt-free C++17 library
-    paint_match.hpp       matching engine (header only)
-    csv_reader.*          RFC 4180 CSV parser
-    paint_schema.*        attribute definitions, CSV column mapping, value parsing
-  app/                  Qt 6 Widgets application
-    main.cpp
-    MainWindow.*          window, database loading, search, details pane, About
-    CriteriaPanel.*       one input row per attribute (target, min, max, weight, required)
-    InputWidgets.*        "Any"-able spin box, multi-select combo, wheel-safe inputs
-    ResultsModel.*        ranked results table model + match-% bar delegate
-    SettingsDialog.*      Options (database path, result count, default weights)
-    AppSettings.*         settings.ini next to the exe (QSettings, INI format)
-  resources/version.rc.in Windows file version (1.0.1) and exe icon
-  resources/pwp_logo.*  application icon (.ico for the exe, .png for windows/taskbar)
-  data/paints.csv       sample database exported from the Product Picker workbook
-  tests/core_tests.cpp  console tests for the core library
-  installer/            Qt Installer Framework config, package and build script
-```
-
 ## The database
 
 Value formats understood:
