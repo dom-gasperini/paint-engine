@@ -1,6 +1,9 @@
 # Paint Engine v1.0.1
 
-Qt 6 Widgets application that finds the paint products in a CSV database that best match
+## Installer
+[Download Installer]({{ site.baseurl }}{% installer/PwpPaintEngine_Installer.exe %})   
+
+A Qt application that finds the paint products in a CSV database that best match
 a set of attribute criteria, ranked by a weighted similarity score.
 
 ## Layout
